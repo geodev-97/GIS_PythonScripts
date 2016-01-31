@@ -10,7 +10,7 @@ Start "note of what is happening" /SEPARATE C:\Program Files\TheArcGisPythonInst
 @echo Finished first python script at %TIME% - %DATE% >> %log%
 
 @echo Starting first python script at %TIME% - %DATE% >> %log%
-C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Daily_Replication_SomeTable.py"
+C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Daily_Replication_A_Table_And_Append_To_Existing_Table.py"
 @echo Finished first python script at %TIME% - %DATE% >> %log%
 
 @echo Starting second python script at %TIME% - %DATE% >> %log%
