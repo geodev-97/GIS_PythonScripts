@@ -1,0 +1,18 @@
+REM IN THIS BATCH FILE WHICH WOULD BE CALLED .BAT or .CMD COULD BE USED FOR CALLING MULTIPLE PYTHON SCRIPTS.
+@ECHO OFF
+SET log=C:\Users\MyUserName\ArcGis\Python\LogFiles\MyPyBatchStartFileTest20160101.log
+SET errorlog=C:\Users\MyUserName\ArcGis\Python\LogFiles\MyPyBatchStartFileTest20160101_Error.log
+:: Report date and time script starts
+@echo on
+
+@echo Starting python script at the same time as another at %TIME% - %DATE% >> %log%
+Start "note of what is happening" /SEPARATE C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Create_Something_Python_Script_In_Devl.py"
+@echo Finished first python script at %TIME% - %DATE% >> %log%
+
+@echo Starting first python script at %TIME% - %DATE% >> %log%
+C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Create_Something_Python_Script_In_Devl.py"
+@echo Finished first python script at %TIME% - %DATE% >> %log%
+
+@echo Starting second python script at %TIME% - %DATE% >> %log%
+C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Create_Something_Python_Script_In_Devl.py"
+@echo Finished second python script at %TIME% - %DATE% >> %log%
