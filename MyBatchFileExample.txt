@@ -6,11 +6,11 @@ SET errorlog=C:\Users\MyUserName\ArcGis\Python\LogFiles\MyPyBatchStartFileTest20
 @echo on
 
 @echo Starting python script at the same time as another at %TIME% - %DATE% >> %log%
-Start "note of what is happening" /SEPARATE C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Create_Something_Python_Script_In_Devl.py"
+Start "note of what is happening" /SEPARATE C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\ListUsersInDatabase.py"
 @echo Finished first python script at %TIME% - %DATE% >> %log%
 
 @echo Starting first python script at %TIME% - %DATE% >> %log%
-C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Create_Something_Python_Script_In_Devl.py"
+C:\Program Files\TheArcGisPythonInstallPath\python.exe "C:\Users\MyUserName\ArcGis\Python\Daily_Replication_SomeTable.py"
 @echo Finished first python script at %TIME% - %DATE% >> %log%
 
 @echo Starting second python script at %TIME% - %DATE% >> %log%
